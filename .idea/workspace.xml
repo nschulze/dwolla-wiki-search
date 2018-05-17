@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd91c18f-7973-4633-9027-b04b1aba8ad6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/searches.js" afterPath="$PROJECT_DIR$/searches.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/drive.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,13 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searches.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searches.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/searches.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dwolla.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/dwolla.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -279,12 +285,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526586757144</updated>
       <workItem from="1526586759325" duration="1117000" />
-      <workItem from="1526592117892" duration="158000" />
+      <workItem from="1526592117892" duration="281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1275000" />
+    <option name="totallyTimeSpent" value="1398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1501" y="-230" width="1440" height="821" extended-state="0" />
@@ -415,6 +421,11 @@
           <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dwolla.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
