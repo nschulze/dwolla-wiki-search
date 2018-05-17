@@ -1,7 +1,7 @@
 {
-  "name": "Fallback",
+  "name": "Dwolla Wiki Search",
   "version": "0.0.1",
-  "description": "Fallback websearch plugin for unmatched actions",
+  "description": "Search through Dwolla's Wiki",
   "icon": "icon.png",
   "blocks": {
     "input": [
