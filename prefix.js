@@ -26,7 +26,7 @@ module.exports = (pluginContext) => {
            return Promise.resolve(got(url, {
             }).then(res => ([{
                 icon: res.body,
-                title: res.body,
+                title: res.body.values,
                 subtitle: res.body,
                 value: res.body
             }])))
