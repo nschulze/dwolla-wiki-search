@@ -22,7 +22,7 @@ module.exports = (pluginContext) => {
 
       const search = searches[prefix] || prefixSearches[prefix]
         if(prefix === "stash") {
-          const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize\\=32\\&start\\=0\\&limit\\=20\\&name\\=${term}\\&projectname\\=`
+          const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize=32&start=0&limit=20&name=${term}&projectname=`
            return Promise.resolve(got(url, {
             }).then(res => {
                const jsonBody = JSON.parse(res.body)
