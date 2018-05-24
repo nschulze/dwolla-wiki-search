@@ -30,7 +30,7 @@ module.exports = (pluginContext) => {
                    icon: path.join('assets', prefix + '.png'),
                    title: x.name,
                    subtitle: x.links.self[0].href,
-                   value: `https://stash.dwolla.net${x.project.avatarUrl}`
+                   value: x.links.self[0].href
                }))
            }))
         }
