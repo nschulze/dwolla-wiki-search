@@ -1,6 +1,6 @@
 {
   "name": "zazu-fallback",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Common fallback searches for Zazu.",
   "main": "zazu.js",
   "directories": {
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/tinytacoteam/zazu-fallback#readme",
   "devDependencies": {
     "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "got": "^6.7.1"
   }
 }

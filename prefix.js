@@ -1,3 +1,5 @@
+const got = require('got')
+const indexer = (obj, i) => obj[i]
 const path = require('path')
 const searches = require('./searches')
 
@@ -19,12 +21,21 @@ module.exports = (pluginContext) => {
       const term = queryBits.slice(1).join(' ')
 
       const search = searches[prefix] || prefixSearches[prefix]
-
+        if(prefix === "stash") {
+          const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize\\=32\\&start\\=0\\&limit\\=20\\&name\\=${term}\\&projectname\\=`
+           return Promise.resolve(got(url, {
+            }).then(res => res.body.values.map((x, i) => ({
+                icon: x.project.avatarUrl,
+                title: x.name,
+                subtitle: x.link.self.href,
+                value: x.link.self.href
+            }))))
+        }
       return Promise.resolve(
         [
           {
             icon: search.icon || path.join('assets', prefix + '.png'),
-            title: 'Search abcd' + search.name + ' for ' + term,
+            title: 'Search' + search.name + ' for ' + term,
             value: search.url + encodeURIComponent(term)
           }
         ]
