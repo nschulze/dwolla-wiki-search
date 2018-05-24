@@ -25,8 +25,8 @@ module.exports = (pluginContext) => {
           const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize\\=32\\&start\\=0\\&limit\\=20\\&name\\=${term}\\&projectname\\=`
            return Promise.resolve(got(url, {
             }).then(res => {
-               let jsonBody = JSON.parse(res.body)
-               [{
+               const jsonBody = JSON.parse(res.body)
+               return [{
                    icon: jsonBody,
                    title: jsonBody,
                    subtitle: res.body,
