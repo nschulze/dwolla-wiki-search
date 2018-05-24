@@ -24,12 +24,12 @@ module.exports = (pluginContext) => {
         if(prefix === "stash") {
           const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize\\=32\\&start\\=0\\&limit\\=20\\&name\\=${term}\\&projectname\\=`
            return Promise.resolve(got(url, {
-            }).then(res => res.body.values.map((x, i) => ({
-                icon: x.project.avatarUrl,
-                title: x.name,
-                subtitle: x.link.self.href,
-                value: x.link.self.href
-            }))))
+            }).then(res => ({
+                icon: res,
+                title: res,
+                subtitle: res,
+                value: res
+            })))
         }
       return Promise.resolve(
         [
