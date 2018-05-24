@@ -29,8 +29,8 @@ module.exports = (pluginContext) => {
                return jsonBody.values.map(x => ({
                    icon: x.project.avatarUrl,
                    title: x.name,
-                   subtitle: x.link.self.href,
-                   value: x.link.self.href
+                   subtitle: x.links.self.href,
+                   value: x.links.self.href
                }))
            }))
         }
