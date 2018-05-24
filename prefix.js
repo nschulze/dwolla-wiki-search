@@ -27,10 +27,10 @@ module.exports = (pluginContext) => {
             }).then(res => {
                const jsonBody = JSON.parse(res.body)
                return jsonBody.values.map(x => ({
-                   icon: `https://stash.dwolla.net/${x.project.avatarUrl}` || path.join('assets', prefix + '.png'),
-                   title: `${x.name} + ${term} + `,
+                   icon: `https://stash.dwolla.net${x.project.avatarUrl}` || path.join('assets', prefix + '.png'),
+                   title: x.name,
                    subtitle: x.links.self[0].href,
-                   value: `https://stash.dwolla.net/${x.project.avatarUrl}`
+                   value: `https://stash.dwolla.net${x.project.avatarUrl}`
                }))
            }))
         }
