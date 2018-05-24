@@ -27,10 +27,10 @@ module.exports = (pluginContext) => {
             }).then(res => {
                const jsonBody = JSON.parse(res.body)
                return jsonBody.values.map(x => ({
-                   icon: x.project.avatarUrl,
-                   title: `${x.name} + ${term}`,
+                   icon: x.project.avatarUrl || path.join('assets', prefix + '.png'),
+                   title: `${x.name} + ${term} + `,
                    subtitle: x.links.self[0].href,
-                   value: x.links.self[0].href
+                   value: url
                }))
            }))
         }
