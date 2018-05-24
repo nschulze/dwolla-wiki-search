@@ -26,12 +26,12 @@ module.exports = (pluginContext) => {
            return Promise.resolve(got(url, {
             }).then(res => {
                let jsonBody = JSON.parse(res.body)
-               jsonBody.values.map(x => [{
-                   icon: x.project.avatarUrl,
-                   title: jsonBody.size,
+               [{
+                   icon: jsonBody,
+                   title: jsonBody,
                    subtitle: res.body,
                    value: res.body
-               }])
+               }]
            }))
         }
       return Promise.resolve(

@@ -1,6 +1,6 @@
 {
   "name": "Dwolla Wiki Search",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Search through Dwolla's Wiki",
   "icon": "icon.png",
   "blocks": {
