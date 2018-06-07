@@ -8,7 +8,8 @@ const searches = {
   gh: { name: 'GitHub', url: 'https://github.com/search?utf8=%E2%9C%93&q='},
   google: { name: 'Google', url: 'https://www.google.com/search?q='},
   npm: { name: 'NPM', url: 'https://www.npmjs.com/search?q='},
-  stack: { name: 'Stack Overflow', url: 'https://stackoverflow.com/search?q='}
+  stack: { name: 'Stack Overflow', url: 'https://stackoverflow.com/search?q='},
+  splunk: {name: 'Splunk', url: 'https://splunk.dwolla.net/en-US/app/search/search?q=search%20'}
 }
 
 module.exports = searches
