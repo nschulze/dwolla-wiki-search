@@ -31,7 +31,7 @@ module.exports = (pluginContext) => {
                return jsonBody.values.map(x => ({
                    icon: path.join('assets', prefix + '.png'),
                    title: getTitle(x.name, modifier),
-                   subtitle: x.name + 'xx' + modifier + 'yy' + terms,
+                   subtitle: getUrl(x.links, modifier),
                    value: getUrl(x.links, modifier)
                }))
            }))
