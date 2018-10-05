@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd91c18f-7973-4633-9027-b04b1aba8ad6" name="Default" comment="" />
+    <list default="true" id="dd91c18f-7973-4633-9027-b04b1aba8ad6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,20 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prefix.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="prefix.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prefix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="659">
+              <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -53,8 +55,8 @@
       <list>
         <option value="$PROJECT_DIR$/searches.js" />
         <option value="$PROJECT_DIR$/zazu.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/prefix.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -211,12 +213,12 @@
       <workItem from="1528401315338" duration="1084000" />
       <workItem from="1528405304862" duration="248000" />
       <workItem from="1529697937038" duration="597000" />
-      <workItem from="1538757087394" duration="4587000" />
+      <workItem from="1538757087394" duration="5129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17077000" />
+    <option name="totallyTimeSpent" value="17619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1577" y="-146" width="1521" height="953" extended-state="0" />
@@ -448,13 +450,6 @@
     <entry file="file://$PROJECT_DIR$/assets/splunk.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zazu.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -488,8 +483,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prefix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="659">
+          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
