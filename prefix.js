@@ -63,7 +63,7 @@ const getUrl = (links, modifier) => {
     } else if ( modifier === 'clone') {
         return links.clone.href;
     }
-    return link;
+    return links.self[0].href;
 }
 
 
