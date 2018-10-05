@@ -26,8 +26,8 @@
       <file leaf-file-name="prefix.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prefix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+            <state relative-caret-position="-166">
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -56,8 +56,8 @@
       <list>
         <option value="$PROJECT_DIR$/searches.js" />
         <option value="$PROJECT_DIR$/zazu.json" />
-        <option value="$PROJECT_DIR$/prefix.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/prefix.js" />
       </list>
     </option>
   </component>
@@ -214,12 +214,12 @@
       <workItem from="1528401315338" duration="1084000" />
       <workItem from="1528405304862" duration="248000" />
       <workItem from="1529697937038" duration="597000" />
-      <workItem from="1538757087394" duration="5339000" />
+      <workItem from="1538757087394" duration="5993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17829000" />
+    <option name="totallyTimeSpent" value="18483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1577" y="-146" width="1521" height="953" extended-state="0" />
@@ -458,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/root.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/http.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -480,8 +473,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prefix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        <state relative-caret-position="-166">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>

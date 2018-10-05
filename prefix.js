@@ -23,7 +23,8 @@ module.exports = (pluginContext) => {
       const search = searches[prefix] || prefixSearches[prefix]
         if(prefix === "stash") {
             const terms = term.split(' ')
-            const modifier = terms[1] ? terms[1] : ''
+            var modifier = terms[1] ? terms[1] : ''
+            modifier = autofill(modifier);
             const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize=32&start=0&limit=20&name=${terms[0]}&projectname=`
            return Promise.resolve(got(url, {
             }).then(res => {
@@ -61,9 +62,24 @@ const getUrl = (links, modifier) => {
         const link = links.self[0].href;
         return link.substring(0, link.length-6) + modifier;
     } else if ( modifier === 'clone') {
-        return links.clone.href;
+        return links.clone[0].href;
     }
     return links.self[0].href;
+}
+
+const autofill = (modifier) => {
+    const branches = 'branches';
+    const pullrequests = 'pull-requests';
+    const clone = 'clone';
+
+    if  (branches.includes(modifier)) {
+        return branches;
+    } else if (pullrequests.includes(modifier)) {
+        return pullrequests;
+    } else if (clone.includes(modifier)) {
+        return clone;
+    }
+    return modifier;
 }
 
 
