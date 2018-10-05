@@ -68,11 +68,14 @@ const getUrl = (links, modifier) => {
 }
 
 const autofill = (modifier) => {
+    const browse = 'browse';
     const branches = 'branches';
     const pullrequests = 'pull-requests';
     const clone = 'clone';
 
-    if  (branches.includes(modifier)) {
+    if  (browse.includes(modifier)) {
+        return browse
+    } else if  (branches.includes(modifier)) {
         return branches;
     } else if (pullrequests.includes(modifier)) {
         return pullrequests;
