@@ -22,15 +22,17 @@ module.exports = (pluginContext) => {
 
       const search = searches[prefix] || prefixSearches[prefix]
         if(prefix === "stash") {
-          const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize=32&start=0&limit=20&name=${term}&projectname=`
+            const terms = term.split(' ')
+            const modifier = terms[1] ? terms[1] : ''
+            const url = `https://stash.dwolla.net/rest/api/latest/repos/?avatarSize=32&start=0&limit=20&name=${terms[0]}&projectname=`
            return Promise.resolve(got(url, {
             }).then(res => {
                const jsonBody = JSON.parse(res.body)
                return jsonBody.values.map(x => ({
                    icon: path.join('assets', prefix + '.png'),
-                   title: x.name,
-                   subtitle: x.links.self[0].href,
-                   value: x.links.self[0].href
+                   title: getTitle(x.name, modifier),
+                   subtitle: getUrl(x.links, modifier),
+                   value: getUrl(x.links, modifier)
                }))
            }))
         }
@@ -46,3 +48,22 @@ module.exports = (pluginContext) => {
     },
   }
 }
+
+const getTitle = (name, modifier) => {
+    if (modifier === 'branches' || modifier === 'pull-requests' || modifier === 'clone') {
+        return name + ' ' + modifier;
+    }
+    return name;
+}
+
+const getUrl = (links, modifier) => {
+    if (modifier === 'branches' || modifier === 'pull-requests') {
+        const link = links.self[0].href;
+        return link.substring(0, link.length-6) + modifier;
+    } else if ( modifier === 'clone') {
+        return links.clone.href;
+    }
+    return link;
+}
+
+
