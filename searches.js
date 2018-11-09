@@ -3,6 +3,8 @@ const searches = {
   wiki: { name: 'Wiki', url: 'https://sites.google.com/a/dwolla.com/wiki/system/app/pages/search?scope=search-site&q='},
   jira: { name:'Jira', url: 'https://jira.dwolla.net/secure/QuickSearch.jspa?searchString='},
   stash: {name: 'Stash', url:'https://stash.dwolla.net/projects/FE/repos/'},
+  bit: {name: 'Bit', url:'https://stash.dwolla.net/projects/FE/repos/'},  
+  bitbucket: {name: 'Bitbucket', url:'https://bitbucket.dwolla.net/plugins/servlet/search?q='},  
   drive: { name: 'Drive', url: 'https://drive.google.com/drive/search?q='},
   giphy: { name: 'Giphy', url: 'https://giphy.com/search/'},
   gh: { name: 'GitHub', url: 'https://github.com/search?utf8=%E2%9C%93&q='},
@@ -13,3 +15,5 @@ const searches = {
 }
 
 module.exports = searches
+
+
