@@ -42,12 +42,12 @@ module.exports = (pluginContext) => {
             var modifier = terms[1] ? terms[1] : ''
             modifier = autofill(modifier);
             if (terms[0] === 'dashboard') {
-                 return jsonBody.values.map(x => ({
+                 return {
                      icon: path.join('assets', prefix + '.png'),
                      title: 'Bitbucket',
                      subtitle: 'Dashboard',
                      value: 'https://bitbucket.dwolla.net/dashboard'
-                 }))
+                 }
             }
             else {
               const url = `https://bitbucket.dwolla.net/rest/api/latest/repos/?avatarSize=32&start=0&limit=20&name=${terms[0]}&projectname=`
