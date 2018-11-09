@@ -1,6 +1,6 @@
 {
   "name": "zazu-fallback",
-  "version": "1.0.35",
+  "version": "1.0.36",
   "description": "Common fallback searches for Zazu.",
   "main": "zazu.js",
   "directories": {
