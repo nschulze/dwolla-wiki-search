@@ -41,7 +41,7 @@ module.exports = (pluginContext) => {
             const terms = term.split(' ')
             var modifier = terms[1] ? terms[1] : ''
             modifier = autofill(modifier);
-            const url = `https://bitbucket.dwolla.net/rest/api/latest/repos/?avatarSize=32&start=0&limit=20&${terms[0]}&projectname=`
+            const url = `https://bitbucket.dwolla.net/rest/api/latest/repos/?avatarSize=32&start=0&limit=20&name=${terms[0]}&projectname=`
            return Promise.resolve(got(url, {
             }).then(res => {
                const jsonBody = JSON.parse(res.body)
